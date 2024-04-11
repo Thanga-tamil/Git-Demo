@@ -1,11 +1,8 @@
 function show() {
   var url = document.querySelector('.inp').value
   fetch(`http://localhost:8080/data/${url}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok')
-      }
-      return response.json()
+    .then((res) => {
+      return res.json()
     })
     .then((data) => {
       displayData(data)
