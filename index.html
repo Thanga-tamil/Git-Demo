@@ -7,21 +7,45 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="con">
-      <button class="btn1">Neovim</button>
-      <button class="btn2">Spring</button>
-    </div>
-    <div class="neovim">
-      <div class="spring">
-        <h1 class="spr">(: let me cook with spring boot :)</h1>
-        <h1 class="vim">(: I am into neoVim :)</h1>
-      </div>
+    <!-- Your existing HTML content goes here -->
+    <div class="con1">
+      <input type="text" placeholder="Enter the name" class="inp" />
+      <button class="btn1" onclick="show()">Enter</button>
     </div>
 
-    <div class="num">
-      <h2 class="h2">0</h2>
-      <button class="btn3" onclick="add()">+</button>
-      <button class="btn4" onclick="dec()">-</button>
+    <div class="container">
+      <div class="content">
+        <div class="hide">
+          <div class="data-container">
+            <div class="data-label">Name</div>
+            <div class="name"></div>
+          </div>
+          <div class="data-container">
+            <div class="data-label">Age</div>
+            <div class="age"></div>
+          </div>
+          <div class="data-container">
+            <div class="data-label">Department</div>
+            <div class="dp"></div>
+          </div>
+          <div class="data-container">
+            <div class="data-label">Marital</div>
+            <div class="mar"></div>
+          </div>
+          <div class="data-container">
+            <div class="data-label">Occupation</div>
+            <div class="occ"></div>
+          </div>
+          <div class="data-container">
+            <div class="data-label">Location</div>
+            <div class="local"></div>
+          </div>
+          <div class="data-container">
+            <div class="data-label">Phone</div>
+            <div class="phone"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>
